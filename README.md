@@ -34,6 +34,7 @@ myProtectedHandler := ipfiltering.Middleware(h, ipfiltering.MiddlewareOptions{
     TrustXFFHeader: true, 
 })
 http.ListenAndServe(":8080", myProtectedHandler)
+```
 
 **Allow your LAN only**
 
